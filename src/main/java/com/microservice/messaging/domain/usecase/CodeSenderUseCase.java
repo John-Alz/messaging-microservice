@@ -14,7 +14,6 @@ public class CodeSenderUseCase implements ICodeSenderServicePort {
         this.codeSenderPort = codeSenderPort;
     }
 
-
     @Override
     public String sendCodeSms(String phoneNumber) {
         String code = String.valueOf(100000 + random.nextInt(900000));
